@@ -1,4 +1,4 @@
-class Cpf extends Mask{
+class Cpf extends Base{
 
     get value()
     {

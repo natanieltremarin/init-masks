@@ -1,4 +1,4 @@
-class Fone extends Mask{
+class Fone extends Base{
 
     get value()
     {

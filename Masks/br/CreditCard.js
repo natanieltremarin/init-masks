@@ -1,4 +1,4 @@
-class CreditCard extends Mask{
+class CreditCard extends Base{
 
     get value()
     {

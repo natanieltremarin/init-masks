@@ -1,4 +1,4 @@
-class Data extends Mask{
+class Data extends Base{
 
     get value()
     {

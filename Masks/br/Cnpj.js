@@ -1,4 +1,4 @@
-class Cnpj extends Mask{
+class Cnpj extends Base{
 
     get value()
     {
