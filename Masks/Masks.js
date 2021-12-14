@@ -4,7 +4,7 @@ class Masks {
         Cnpj: 'cnpj',
         Cpf: 'cpf',
         CreditCard: 'credit_card',
-        Date: 'date',
+        Data: 'date',
         Fone: 'fone'
     };
 

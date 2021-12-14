@@ -4,6 +4,6 @@ class Base {
 
     constructor(element) {
         this.element = element;
-        this.data = null;
+        this.data = '';
     };
 }

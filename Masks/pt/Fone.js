@@ -38,7 +38,7 @@ class Fone extends Base {
 
         for (var position in parts.filter(
             function (value) {
-                if (parseInt(value) > 0) return value;
+                if (typeof parseInt(value) === 'number') return value;
             })) {
             this.element.value += patern[position] + parts[position];
         }
