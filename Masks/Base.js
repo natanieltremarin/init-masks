@@ -1,7 +1,9 @@
 class Base {
+    data;
     element;
 
-    constructor (element) {
+    constructor(element) {
         this.element = element;
-    }
+        this.data = null;
+    };
 }
