@@ -1,4 +1,6 @@
-class Cpf extends Base {
+import { Base } from '../Base.js';
+
+export class Cpf extends Base {
 
     set value(input_data) {
         this.data = input_data.replace(/[^0-9]/g, '');
@@ -17,14 +19,7 @@ class Cpf extends Base {
             this.data.substr(9, 2)
         ];
 
-        this.element.value = '';
-
-        for (var position in parts.filter(
-            function (value) {
-                if (typeof parseInt(value) === 'number') return value;
-            })) {
-            this.element.value += patern[position] + parts[position];
-        }
+        this.parse(parts, patern);
     };
 
     get value() {

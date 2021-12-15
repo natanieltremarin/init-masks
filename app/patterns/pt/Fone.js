@@ -1,4 +1,6 @@
-class Fone extends Base {
+import { Base } from '../Base.js';
+
+export class Fone extends Base {
 
     set value(input_data) {
         this.data = input_data.replace(/[^0-9]/g, '');
@@ -34,14 +36,7 @@ class Fone extends Base {
             ];
         }
 
-        this.element.value = '';
-
-        for (var position in parts.filter(
-            function (value) {
-                if (typeof parseInt(value) === 'number') return value;
-            })) {
-            this.element.value += patern[position] + parts[position];
-        }
+        this.parse(parts, patern);
     };
 
     get value() {

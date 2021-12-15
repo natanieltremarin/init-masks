@@ -1,3 +1,9 @@
+import { Cnpj } from './patterns/pt/Cnpj.js';
+import { Cpf } from './patterns/pt/Cpf.js';
+import { CreditCard } from './patterns/pt/CreditCard.js';
+import { Data } from './patterns/pt/Data.js';
+import { Fone } from './patterns/pt/Fone.js';
+
 class Masks {
     applied = [];
     types = {
@@ -41,8 +47,31 @@ class Masks {
         }
     };
 
-    create(element) {
+    apply(event) {
+        this.applied[event.target.name].value = event.target.value;
+    };
 
+    parseSubmit(event) {
+
+        for (var position in event.target.elements) {
+
+            if (typeof event.target.elements[position] !== 'object') {
+                continue;
+            }
+
+            if (event.target.elements[position].name === undefined) {
+                continue;
+            }
+
+            if (this.applied[event.target.elements[position].name] === undefined) {
+                continue;
+            }
+
+            event.target.elements[position].value = this.applied[event.target.elements[position].name].value;
+        }
+    }
+
+    create(element) {
         var _this = this;
 
         element.onkeyup = function (event) {
@@ -92,30 +121,6 @@ class Masks {
                 break;
         }
     };
-
-    apply(event) {
-        this.applied[event.target.name].value = event.target.value;
-    };
-
-    parseSubmit(event) {
-
-        for (var position in event.target.elements) {
-
-            if (typeof event.target.elements[position] !== 'object') {
-                continue;
-            }
-
-            if (event.target.elements[position].name === undefined) {
-                continue;
-            }
-
-            if (this.applied[event.target.elements[position].name] === undefined) {
-                continue;
-            }
-
-            event.target.elements[position].value = this.applied[event.target.elements[position].name].value;
-        }
-    }
 }
 
 window.addEventListener('load', function () {

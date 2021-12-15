@@ -38,6 +38,16 @@
                     </div>
                 </div>
                 <div class="col-12">
+                    <div class="form-group">
+                        <input type="text" name="cnpj" class="form-control" i-mask="cnpj" placeholder="Insira um cnpj" autocomplete="off">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="text" name="cartao" class="form-control" i-mask="credit_card" placeholder="Cartão decredito" autocomplete="off">
+                    </div>
+                </div>
+                <div class="col-12">
                     <button class="btn btn-info form-control" type="submit">Submit</button>
                 </div>
             </div>
@@ -47,13 +57,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
-    <script src="Masks/Base.js"></script>
-    <script src="Masks/Masks.js"></script>
-    <script src="Masks/pt/Cnpj.js"></script>
-    <script src="Masks/pt/Cpf.js"></script>
-    <script src="Masks/pt/CreditCard.js"></script>
-    <script src="Masks/pt/Data.js"></script>
-    <script src="Masks/pt/Fone.js"></script>
+    <script type="module" src="app/Masks.js"></script>
 </body>
 
 </html>
