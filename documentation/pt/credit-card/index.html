@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Crédito Mask</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.css">
-    <title>Init Masks</title>
     <base href="/init-masks/">
     <link rel="stylesheet" href="css/site.css">
 </head>
-
-<body class="home">
+<body>
     <header>
         <h5>
             <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
             <a href="/init-masks">Home</a> 
+            > 
+            <a href="/init-masks/documentation/">Documentation</a> 
+            > 
+            <a href="/init-masks/documentation/pt/">pt-br</a>
+            > 
+            <a href="/init-masks/documentation/pt/credit-card">Cartão de crédito</a>
         </h5>
     </header>
     <article class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <section class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3>Testing Masks</h3>
-                            <hr>
-                            <p>
-                                <i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Languages
-                            </p>
+                <div class="container">
+                    <form action="" method="GET">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5><i class="fa fa-credit-card" aria-hidden="true"></i> Cartão de crédito</h5>
+                                <hr>
+                            </div>
+                            <div class="col-12">
+                                <img src="/init-masks/img/input-card.png">
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" name="cartao" class="form-control" i-mask="credit_card" placeholder="Número..." autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-ligth form-control" type="submit">Submit</button>
+                            </div>
                         </div>
-                        <div class="col-12">
-                            <a class="card" href="documentation/pt/">
-                                <i class="fa fa-language" aria-hidden="true"></i>&nbsp;PT-BR
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="card" href="documentation/en/">
-                                <i class="fa fa-language" aria-hidden="true"></i>&nbsp;EN
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="card" href="documentation/es/">
-                                <i class="fa fa-language" aria-hidden="true"></i>&nbsp;ES
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="card" href="documentation/">
-                                <i class="fa fa-book" aria-hidden="true"></i>&nbsp;How to use
-                            </a>
-                        </div>
-                    </div>
-                </section>
+                    </form>
+                </div>
             </div>
         </div>
     </article>
@@ -70,6 +66,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="/init-masks/app/Masks.js"></script>
 </body>
-
 </html>

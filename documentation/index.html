@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.css">
+    <base href="/init-masks/">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body class="documentation">
+    <header>
+        <h5>
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            <a href="/init-masks">Home</a> 
+            > 
+            <a href="/init-masks/documentation/">Documentation</a> 
+        </h5>
+    </header>
+    <article class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>How to use</h5>
+                            <hr>
+                            <p class="text-left">Masks used in sending get forms.</p>
+                            <p class="text-left">
+                                To get the small lib working correctly, you must have an updated version of the browser, and internet explorer is not supported.</p>
+                            <p class="text-left"></p>
+                            <h5>Types of masks:</h5>
+                            <ul class="text-left">
+                                <li>
+                                    <a href="/init-masks/documentation/pt/">Pt-br</a>
+                                    <ul>
+                                        <li><a href="/init-masks/documentation/pt/cnpj">Cnpj > i-mask="cnpj"</a></li>
+                                        <li><a href="/init-masks/documentation/pt/cpf">Cpf > i-mask="cpf"</a></li>
+                                        <li><a href="/init-masks/documentation/pt/credit-card">Cartão de Crédito > i-mask="credit-card"</a></li>
+                                        <li><a href="/init-masks/documentation/pt/data">Data > i-mask="data"</a></li>
+                                        <li><a href="/init-masks/documentation/pt/fone">Fone > i-mask="fone"</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/init-masks/documentation/pt/en/">En</a></li>
+                                <li><a href="/init-masks/documentation/pt/es/">Es</a></li>
+                            </ul>
+                            <hr>
+                            <h5>Mandatory attributes</h5>
+                            <ul class="text-left">
+                                <li>name="" (Unique identifier of the field per page).</li>
+                                <li>i-mask="" (The identifier of the desired mask).</li>
+                                <li>type="text" (For correct operation the type attribute must be text).</li>
+                            </ul>
+                            <strong><p>Recommended additional attributes</p></strong>
+                            <ul class="text-left">
+                                <li>minlength="" (Please specify if you want to validate the minimum number of characters, but count the spaces generated that will be removed when sending the content).</li>
+                                <li>required (If it is a required field).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/fontawesome.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

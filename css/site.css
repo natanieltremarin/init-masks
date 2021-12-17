@@ -1,0 +1,84 @@
+body {
+    color: #222222;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FFFFFF;
+    height: 100%;
+    background-image: url('../img/fundo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-size: auto;
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+header {
+    padding: 30px 30px 30px 30px;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+.container {
+    height: auto;
+    background: rgba( 255, 255, 255, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.30 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.12 );
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+.card {
+    height: 100px;
+    display: block;
+    color: #222222;
+    padding: 30px;
+    margin: 10px 10px 10px;
+    text-decoration: none;
+    border: none;
+    background: rgba( 255, 255, 255, 0.30 );
+}
+
+.card:hover {
+    color: #AAAAAA;
+    background: rgba( 255, 255, 255, 0.60 );
+    border: #AAAAAA solid 1px;
+}
+
+.form-control {
+    opacity: 0.8;
+}
+
+.btn.btn-ligth {
+    opacity: 0.8;
+    background-color: #00adf1;
+    color: #FFFFFF;
+}
+
+.btn.btn-ligth:hover {
+    border: #CCCCCC solid 1px;
+}
+
+.documentation .text-left {
+    margin-left: 200px;
+}
+
+footer {
+    z-index: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}

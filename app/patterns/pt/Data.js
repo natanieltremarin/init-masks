@@ -24,7 +24,7 @@ export class Data extends Base {
         return new Date(
             this.data.substr(4, 4) + '-'
             + this.data.substr(2, 2) + '-'
-            + this.data.substr(0, 2) + '00:00:0000'
+            + this.data.substr(0, 2)
         );
     };
 }
