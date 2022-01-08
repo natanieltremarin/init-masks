@@ -21,7 +21,7 @@ a:hover {
 }
 
 header {
-    height: 10vh;
+    height: 7vh;
     position: fixed;
     width: 100%;
     top: 0;
@@ -34,14 +34,14 @@ article {
     margin-bottom: 50px;
     position: fixed;
     width: 100%;
-    top: 10vh;
-    height: 85vh;
+    top: 7vh;
+    height: 82vh;
     overflow-x: hidden;
     z-index: 100;
 }
 
 .container {
-    height: 80vh;
+    height: 78vh;
     overflow-x: hidden;
     overflow-y: auto;
     background: rgba( 255, 255, 255, 0.25 );
